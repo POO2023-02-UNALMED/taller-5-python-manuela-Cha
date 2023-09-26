@@ -5,8 +5,8 @@ class Reptil(Animal):
     serpientes = 0
     total_reptiles = 0
 
-    def __init__(self, nombre, edad, habitat, genero, colorEscamas, largoCola):
-        super().__init__(nombre = "", edad = 0, habitat = "", genero = "")
+    def __init__(self, nombre = "", edad = 0, habitat = "", genero = "", colorEscamas = "",  largoCola = 0):
+        super().__init__(nombre, edad, habitat, genero)
         self._colorEscamas = colorEscamas
         self._largoCola = largoCola 
         Reptil._listado.append(self)
