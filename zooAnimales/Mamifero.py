@@ -27,7 +27,7 @@ class Mamifero(Animal):
         caballo = Mamifero(nombre, edad, "selva", genero, True, 4)
     
     @classmethod
-    def getLiatado (cls):
+    def getListado (cls):
         return cls._listado
 
     def setPelaje (self, pelaje):
