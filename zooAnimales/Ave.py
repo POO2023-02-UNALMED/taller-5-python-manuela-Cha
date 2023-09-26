@@ -28,17 +28,9 @@ class Ave(Animal):
     @classmethod
     def getListado (cls):
         return cls._listado
-      #aqui voy 
 
-    def setPelaje (self, pelaje):
-        self._pelaje = pelaje
+    def setColorPlumas (self, color):
+        self._colorPlumas = color
 
-    def isPelaje (self):
-        return self._pelaje 
-    
-    
-    def set_patas(self, patas):
-        self._patas =  patas
-    
-    def getPatas(self):
-        return self._patas 
+    def getColorPlumas (self):
+        return self._colorPlumas 
