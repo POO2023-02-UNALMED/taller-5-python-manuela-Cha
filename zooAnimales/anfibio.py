@@ -14,7 +14,7 @@ class Anfibio (Animal):
 
     @classmethod
     def cantidadAnfibios (cls):
-        return cls.total_Anfibios
+        return cls.total_anfibios
     
     @classmethod
     def crearRana(cls, nombre = "", edad = 0, habitat = "", genero = "" ):
