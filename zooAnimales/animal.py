@@ -1,13 +1,13 @@
 class Animal:
     totalAnimales = 0
-    zona = []
+    
     def __init__(self, nombre =  "", edad = 0, habitat = "", genero = ""):
         self._nombre = nombre
         self._edad = edad
         self._habitat = habitat
         self._genero = genero
+        self._zona = []
         Animal.totalAnimales += 1
-        Animal.zona.append(self)
 
     def movimiento (self):
         return "desplazamiento"
@@ -65,6 +65,12 @@ class Animal:
     
     def setGenero (self, genero):
         self._genero = genero 
+
+    def setZona(self, zona):
+        self._zona.append(zona)
+
+    def getZona(self):
+        return self._zona
 
     @classmethod
     def getCantidadAnimales (cls):
