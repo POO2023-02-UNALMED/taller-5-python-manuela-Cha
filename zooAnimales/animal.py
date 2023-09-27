@@ -26,7 +26,7 @@ class Animal:
         an = Anfibio.cantidadAnfibios()
         rep = Reptil.cantidadReptiles()
 
-        return f'''Mamiferos : {mam}\nAves : {av}\nReptiles : {rep}\nPeces : {an}\nAnfibios : {an}'''
+        return f'''Mamiferos : {mam}\nAves : {av}\nReptiles : {rep}\nPeces : {pe}\nAnfibios : {an}'''
 
     def __str__(self):
         if len(self._zona) != 0:
