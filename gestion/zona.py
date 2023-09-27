@@ -10,12 +10,10 @@ class Zona:
         self._animales.append(animal)
     
     def cantidadAnimales(self):
-        c_animales = 0
         if self._animales == None:
             c_animales = 0
-        for animal in self._animales:
-            if animal != None:
-                c_animales += 1
+        else:
+            c_animales = len(self._animales)
         return c_animales 
 
     def setNombre(self, nombre):
