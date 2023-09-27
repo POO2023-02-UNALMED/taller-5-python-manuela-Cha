@@ -1,5 +1,5 @@
 class Animal:
-    _totalAnimales = 0
+    totalAnimales = 0
     def __init__(self, nombre =  "", edad = 0, habitat = "", genero = ""):
         self._nombre = nombre
         self._edad = edad
