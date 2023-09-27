@@ -12,7 +12,7 @@ class Zona:
         for animal in self._animales:
             if animal != None:
                 animales += 1
-                return animales 
+        return animales 
 
     def setNombre(self, nombre):
         self._nombre = nombre
