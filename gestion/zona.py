@@ -10,6 +10,7 @@ class Zona:
         self._animales.append(animal)
     
     def cantidadAnimales(self):
+        c_animales = 0
         if self._animales == None:
             c_animales = 0
         for animal in self._animales:
