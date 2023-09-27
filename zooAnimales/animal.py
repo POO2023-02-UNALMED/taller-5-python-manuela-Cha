@@ -33,7 +33,14 @@ class Animal:
             cadena = f", la zona en la que me ubico es {nombre}, en el {self._zona[0].getZoo().getNombre()}"
             return cadena
         return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
-    
+
+    def toString(self):
+        if len(self._zona) != 0:
+            nombre = self._zona.__getitem__(0).getNombre()
+            cadena = f", la zona en la que me ubico es {nombre}, en el {self._zona[0].getZoo().getNombre()}"
+            return cadena
+        return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
+        
     def setNombre(self, nombre):
         self._nombre = nombre
 
