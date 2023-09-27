@@ -7,7 +7,7 @@ class Animal:
         self._genero = genero
         self._zona = []
         Animal.totalAnimales += 1
-        Animal.zona.append(self)
+        Animal._zona.append(self)
 
     def movimiento (self):
         return "desplazamiento"
