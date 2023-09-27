@@ -28,3 +28,4 @@ class Zoologico:
         total_animales = 0
         for zona in self._zonas:
             total_animales += zona.cantidadAnimales()
+        return total_animales
